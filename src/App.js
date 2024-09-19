@@ -1,5 +1,6 @@
 import React from 'react';
 import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
+import Home from './components/Home';
 import GreatPyramid from './components/GreatPyramid';
 import StatueOfZeus from './components/StatueOfZeus';
 import HangingGardens from './components/HangingGardens';
@@ -12,6 +13,7 @@ const App = () => {
   return (
     <Router>
       <Routes>
+        <Route path="/" element={<Home />} />
         <Route path="/great-pyramid" element={<GreatPyramid />} />
         <Route path="/statue-of-zeus" element={<StatueOfZeus />} />
         <Route path="/hanging-gardens" element={<HangingGardens />} />
